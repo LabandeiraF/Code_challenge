@@ -24,7 +24,7 @@ document.getElementById('registro').addEventListener('submit', function (e) {
     })
     .then(response => {
         // Muestra el estado de la respuesta
-        document.getElementById('respuesta').textContent = `Estado del servidor: ${response.status} - ${response.statusText}`;
+        document.getElementById('respuesta').textContent = `Estado del servidor: ${response.status}`
         return response.json()
     })
     .then(data => {
